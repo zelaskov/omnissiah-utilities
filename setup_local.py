@@ -20,6 +20,7 @@ CASKS = [
 
 PYTHON_PACKAGES = [
     "virtualenv",
+    "pipreqs"
 ]
 
 def install_packages():
