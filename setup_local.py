@@ -6,6 +6,7 @@ PACKAGES = [
     "npm",
     "postgresql",
     "rabbitmq",
+    'gh'
     ]
 
 CASKS = [
