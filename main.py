@@ -83,19 +83,22 @@ github_org_name = [
 
 answers = prompt(questions)
 
-def choices(answers):
-	for key, value in answers.items():
-		if value == "open project":
-			repository_choice = prompt(repositories)
-			for key, value in repository_choice.items():
-				open_project(value)
-		elif value == "setup a local machine":
-			install_packages()
-		elif value == "pull repos within organization":
-			github_org_choice = prompt(github_org_name)
-			for key, value in github_org_choice.items():
-				download_repos(value)
-	print(greeetings)
+def choices(selections):
+    """
+    actual CLI, takes action based on user choices
+    """
+    for key, value in selections.items():
+        if value == "open project":
+            repository_choice = prompt(repositories)
+            for key, value in repository_choice.items():
+                open_project(value)
+        elif value == "setup a local machine":
+            install_packages()
+        elif value == "pull repos within organization":
+            github_org_choice = prompt(github_org_name)
+            for key, value in github_org_choice.items():
+                download_repos(value)
+    print(greeetings)
+
 
 choices(answers)
-

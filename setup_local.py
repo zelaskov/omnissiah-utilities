@@ -27,7 +27,11 @@ PYTHON_PACKAGES = [
     "pipreqs"
 ]
 
+
 def install_packages():
+    """
+    installs brew packages and casks, python packages based on items in the lists
+    """
     print('instaling brew packages...')
     for package in PACKAGES:
         os.system(f'brew install {package}')
