@@ -6,7 +6,10 @@ PACKAGES = [
     "npm",
     "postgresql",
     "rabbitmq",
-    'gh'
+    'gh',
+    "awscli",
+    "terraform",
+    "minikube"
     ]
 
 CASKS = [
