@@ -1,9 +1,10 @@
 from PyInquirer import prompt
 from pyfiglet import Figlet
 from repositories import list_repositories, open_project
+from setup_local import install_packages
 
 font = Figlet(font="digital")
-print(font.renderText('Praise the Omnissiah'))
+greeetings = font.renderText('Praise the Omnissiah')
 print('''
 
                                                                             ,..........
@@ -80,6 +81,9 @@ def choices(answers):
 			repository_choice = prompt(repositories)
 			for key, value in repository_choice.items():
 				open_project(value)
+		elif value == "setup a local machine":
+			install_packages()
+	print(greeetings)
 
 choices(answers)
 
