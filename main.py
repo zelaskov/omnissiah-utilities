@@ -2,6 +2,7 @@ from PyInquirer import prompt
 from pyfiglet import Figlet
 from repositories import list_repositories, open_project
 from setup_local import install_packages
+from pull_repos import download_repos
 
 font = Figlet(font="digital")
 greeetings = font.renderText('Praise the Omnissiah')
@@ -58,8 +59,7 @@ questions = [
         'choices': [
             'open project',
             'setup a local machine',
-            'Ask for opening hours',
-            'Talk to the receptionist'
+            'pull repos within organization'
         ]
     },
 ]
@@ -73,6 +73,14 @@ repositories = [
 	}
 ]
 
+github_org_name = [
+	    {
+        'type': 'input',
+        'name': 'github_org_choice',
+        'message': 'provide github org name',
+    },
+]
+
 answers = prompt(questions)
 
 def choices(answers):
@@ -83,6 +91,10 @@ def choices(answers):
 				open_project(value)
 		elif value == "setup a local machine":
 			install_packages()
+		elif value == "pull repos within organization":
+			github_org_choice = prompt(github_org_name)
+			for key, value in github_org_choice.items():
+				download_repos(value)
 	print(greeetings)
 
 choices(answers)
