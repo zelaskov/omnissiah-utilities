@@ -5,7 +5,6 @@ PACKAGES = [
     "jq",
     "npm",
     "postgresql",
-    "python3",
     "rabbitmq",
     ]
 
