@@ -1,6 +1,6 @@
 import os
 
-PATH = "../Documents/work/tmh/repositories"
+PATH = "../Documents/work/repositories"
 
 
 def list_repositories():
