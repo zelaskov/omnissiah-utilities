@@ -3,6 +3,7 @@ from pyfiglet import Figlet
 from repositories import list_repositories, open_project
 from setup_local import install_packages
 from pull_repos import download_repos
+from docker import cleanup_images
 
 font = Figlet(font="digital")
 greeetings = font.renderText('Praise the Omnissiah')
@@ -59,7 +60,8 @@ questions = [
         'choices': [
             'open project',
             'setup a local machine',
-            'pull repos within organization'
+            'pull repos within organization',
+			'cleanup all the docker images'
         ]
     },
 ]
@@ -98,6 +100,8 @@ def choices(selections):
             github_org_choice = prompt(github_org_name)
             for key, value in github_org_choice.items():
                 download_repos(value)
+        elif value == "cleanup all the docker images":
+            cleanup_images()
     print(greeetings)
 
 
