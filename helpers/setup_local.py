@@ -21,7 +21,8 @@ CASKS = [
     "virtualbox",
     "visual-studio-code",
     "docker",
-    "spotify"
+    "spotify",
+    "zoom"
 ]
 
 PYTHON_PACKAGES = [
