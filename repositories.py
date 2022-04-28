@@ -12,6 +12,6 @@ def list_repositories():
 
 def open_project(repo):
     """
-    opens the concrete repository in VSC
+    opens the specific repository in VSC
     """
     return os.system(f'code {PATH}/{repo}')
