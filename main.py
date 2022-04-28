@@ -26,7 +26,7 @@ print('''
 							   Rrr    =======     ======   rrrRRrrrRrrrrrrrr
 							  Rrr     =======     ======      rrrrrrrrrrrrrR
 					uhhhh...	    RR                             rrrrrrrRRRRRR
-				     can I Help you?	    Rr                              rrrrrRRRRRRRR
+				     can i help you?	    Rr                              rrrrrRRRRRRRR
 			 				    Rr                                rrrrRRRRRRR
 							   Rrr                           .     rrrRRRRRRRR
 							   Rrr                          GGG       rrrrRRRRR
