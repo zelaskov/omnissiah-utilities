@@ -7,7 +7,7 @@ def list_repositories():
     """
     lists all repositories in provided path
     """
-    return os.listdir(PATH)
+    return sorted(os.listdir(PATH))
 
 
 def open_project(repo):
