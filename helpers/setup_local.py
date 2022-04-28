@@ -20,7 +20,8 @@ CASKS = [
     "vagrant",
     "virtualbox",
     "visual-studio-code",
-    "docker"
+    "docker",
+    "spotify"
 ]
 
 PYTHON_PACKAGES = [
