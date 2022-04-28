@@ -9,7 +9,8 @@ PACKAGES = [
     'gh',
     "awscli",
     "terraform",
-    "minikube"
+    "minikube",
+    "docker-compose"
     ]
 
 CASKS = [
